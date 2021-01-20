@@ -60,6 +60,7 @@
 
     </platform>
     <platform name="android">
+	<hook type="before_compile" src="hooks/android/edit_manifest.js"/>
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="TwilioVideoPlugin">
                 <param name="android-package" value="org.apache.cordova.twiliovideo.TwilioVideo" />
